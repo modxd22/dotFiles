@@ -497,3 +497,4 @@ set textwidth=72 " auto line wrap
 
 " temporary move to utilsnip
 noremap <Leader>c i #include <iostream> <enter>using namespace std; <enter>int main(){<enter>}<esc>
+"hi there from laptop"
