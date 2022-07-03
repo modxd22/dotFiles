@@ -261,6 +261,9 @@ nnoremap <F4> <esc>:w<enter>:!clear<enter>:!brave %<enter>
 " Octave
 nnoremap <s-r><s-o> :!clear<enter>:w<enter>:!octave %<enter>
 
+" bash
+nnoremap <s-r><s-b> :!clear<enter>:w<enter>:!bash  %<enter>
+
 set nu rnu
 
 
