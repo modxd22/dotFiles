@@ -1,4 +1,4 @@
-let s:so_save = &so | let s:siso_save = &siso | set so=0 siso=0
+let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-1 siso=-1
 argglobal
 setlocal fdm=syntax
 setlocal fde=0
@@ -30,13 +30,13 @@ normal! zo
 normal! zo
 141
 normal! zo
-let s:l = 32 - ((0 * winheight(0) + 30) / 60)
+let s:l = 69 - ((16 * winheight(0) + 14) / 28)
 if s:l < 1 | let s:l = 1 | endif
-exe s:l
+keepjumps exe s:l
 normal! zt
-32
-normal! 0
+keepjumps 69
+normal! 025|
 lcd /etc/init.d
-let &so = s:so_save | let &siso = s:siso_save
+let &g:so = s:so_save | let &g:siso = s:siso_save
 doautoall SessionLoadPost
 " vim: set ft=vim :
