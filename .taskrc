@@ -1,4 +1,4 @@
-# [Created by task 2.6.2 5/9/2022 13:39:43]
+# [Created by task 2.6.2 7/1/2022 15:07:05]
 # Taskwarrior program configuration file.
 # For more documentation, see https://taskwarrior.org or try 'man task', 'man task-color',
 # 'man task-sync' or 'man taskrc'
@@ -15,7 +15,7 @@
 # Use the command 'task show' to see all defaults and overrides
 
 # Files
-data.location=/home/mahmoud/.task
+data.location=/data/data/com.termux/files/home/.task
 
 # To use the default location of the XDG directories,
 # move this configuration file from ~/.taskrc to ~/.config/task/taskrc and uncomment below
@@ -39,23 +39,8 @@ data.location=/home/mahmoud/.task
 #include solarized-light-256.theme
 #include no-color.theme
 
-taskd.certificate=\/home\/mahmoud\/.task\/freecinc_6225d75d.cert.pem
-taskd.key=\/home\/mahmoud\/.task\/freecinc_6225d75d.key.pem
-taskd.ca=\/home\/mahmoud\/.task\/freecinc_6225d75d.ca.pem
+taskd.certificate=\/data\/data\/com.termux\/files\/home\/.task\/freecinc_6225d75d.cert.pem
+taskd.key=\/data\/data\/com.termux\/files\/home\/.task\/freecinc_6225d75d.key.pem
+taskd.ca=\/data\/data\/com.termux\/files\/home\/.task\/freecinc_6225d75d.ca.pem
 taskd.server=freecinc.com:53589
 taskd.credentials=FreeCinc\/freecinc_6225d75d\/4448c3ef-309a-49b8-b0c0-4a29cbddd61b
-
-# Head tags
-urgency.user.tag.college.coefficient=10
-urgency.user.tag.career.coefficient=8
-urgency.user.tag.revision.coefficient=8
-urgency.user.tag.studying.coefficient=10
-urgency.user.tag.preStudying.coefficient=6
-
-# Hand tags
-## left
-urgency.user.tag.friends.coefficient=5
-urgency.user.tag.goOut.coefficient=5
-
-## right
-urgency.user.tag.book.coefficient=4
