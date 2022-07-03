@@ -1,0 +1,21 @@
+#!/bin/bash
+
+username="mahmoud"
+homePth="/home/$username"
+repoPth="$homePth/cloned/mine/dotFiles"
+taskrc="$homePth/.taskrc"
+picomrc="$homePth/.config/picom/picom.conf"
+awesomerc="$homePth/.config/awesome/rc.lua"
+vimrc="$homePth/.vimrc"
+zshrc="$homePth/.zshrc"
+Xresources="$homePth/.Xresources"
+xinitrc="$homePth/.xinitrc"
+profile="$homePth/.profile"
+files=($taskrc $picomrc $awesomerc $vimrc $zshrc $Xresources $xinitrc $profile)
+
+for file in ${files[@]}; do
+    cp $file $repoPth
+    git add .
+    git commit -m "from the update script"
+    git push
+done

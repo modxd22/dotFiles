@@ -1,0 +1,1 @@
+/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/usr/lib/jvm/default/bin:/home/mahmoud/.local/bin:/home/mahmoud/.config/rofi/bin
